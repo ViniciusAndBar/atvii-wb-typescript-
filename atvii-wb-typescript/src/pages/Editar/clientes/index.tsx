@@ -2,29 +2,28 @@
 import * as React from 'react';
 import { Button } from 'react-bootstrap';
 import NavBar_ from '../../../component/NavBar'
-import './styles.css'
 
-function CadastrarClientes() {
+function EditarCliente() {
     return (
         <section>
             <header>
                 <NavBar_/>
             </header>
             <main>
-                <h1>Cadastrar Cliente</h1>
+                <h1>Editar Cliente:"Gabriela"</h1>
                 <div className="forms">
                     <form>
                         <div className="field">
-                            <label htmlFor="Nome">Nome:</label>
-                            <input type="text"/>
+                            <label htmlFor="Nome" >Nome:</label>
+                            <input type="text" defaultValue="Gabriela"/>
                         </div>
                         <div className="field">
                             <label htmlFor="Sobrenome">Sobrenome:</label>
-                            <input type="text"/>
+                            <input type="text" defaultValue="Bicha"/>
                         </div>
                         <div className="field">
                             <label htmlFor="Social">Nome social:</label>
-                            <input type="text"/>
+                            <input type="text" defaultValue="Gabriela furacão"/>
                         </div>
                         <div className="field">
                             <label htmlFor="Genero">Gênero:</label>
@@ -36,21 +35,21 @@ function CadastrarClientes() {
                         </div>
                         <div className="field">
                             <label htmlFor="cpf">CPF:</label>
-                            <input type="text"/>
+                            <input type="text" defaultValue="781.203.203-15"/>
                         </div>
                         <div className="field">
                             <label htmlFor="rg">RG:</label>
-                            <input type="text"/>
+                            <input type="text" defaultValue="21.251.255/01"/>
                         </div>
                         <div className="field">
                             <label htmlFor="Telefone">Telefone:</label>
-                            <input type="text"/>
+                            <input type="text" defaultValue="12 3962-1949"/>
                         </div>
                         <div className="field">
                             <label htmlFor="Email">Email:</label>
-                            <input type="email"/>
+                            <input type="email" defaultValue="@gbs"/>
                         </div>
-                        <Button className="submit" variant="outline-dark" type='submit'>Cadastrar</Button>{' '}
+                        <Button className="submit" variant="outline-dark" type='submit'>Editar</Button>{' '}
                     </form>
                 </div>
             </main>
@@ -58,4 +57,4 @@ function CadastrarClientes() {
     );
 }
 
-export default CadastrarClientes;
+export default EditarCliente;

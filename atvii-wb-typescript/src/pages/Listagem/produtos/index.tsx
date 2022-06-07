@@ -1,6 +1,6 @@
 /* eslint-disable react/jsx-pascal-case */
 import * as React from 'react';
-import { Table } from 'react-bootstrap';
+import { Button, Table } from 'react-bootstrap';
 import NavBar_ from '../../../component/NavBar'
 
 function Produtos() {
@@ -18,6 +18,7 @@ function Produtos() {
                             <th>Id</th>
                             <th>Produto</th>
                             <th>Preço</th>
+                            <th>Ações</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -25,16 +26,31 @@ function Produtos() {
                                 <td>1</td>
                                 <td>Shampoo ant-calvice</td>
                                 <td>R$15</td>
+                                <td>
+                                    <Button variant="outline-success">Editar</Button>{' '}
+                                    <Button variant="outline-info" href='/produtos/1'>Visualizar</Button>{' '}
+                                    <Button variant="outline-danger">Remover</Button>{' '}
+                                </td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Shampoo ant-bacterias</td>
                                 <td>R$20</td>
+                                <td>
+                                    <Button variant="outline-success">Editar</Button>{' '}
+                                    <Button variant="outline-info">Visualizar</Button>{' '}
+                                    <Button variant="outline-danger">Remover</Button>{' '}
+                                </td>
                             </tr>
                             <tr>
                                 <td>3</td>
                                 <td>Shampoo CR7 Clear-Man</td>
                                 <td>R$1500</td>
+                                <td>
+                                    <Button variant="outline-success">Editar</Button>{' '}
+                                    <Button variant="outline-info">Visualizar</Button>{' '}
+                                    <Button variant="outline-danger">Remover</Button>{' '}
+                                </td>
                             </tr>
                         </tbody>
                     </Table>

@@ -38,3 +38,7 @@ main{
     align-items: center;
     gap: 15px;
 }
+
+.mb-2{
+    margin-top: 25px;
+}

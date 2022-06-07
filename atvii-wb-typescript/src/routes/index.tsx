@@ -11,6 +11,10 @@ import Consumos from '../pages/Consumos/Consumos';
 import CadastrarClientes from '../pages/Cadastro/clientes';
 import CadastrarProdutos from '../pages/Cadastro/produtos';
 import CadastrarServico from '../pages/Cadastro/servicos';
+import VisualizarCliente from '../pages/Visualizar/clientes';
+import VisualizarProduto from '../pages/Visualizar/produtos';
+import VisualizarServico from '../pages/Visualizar/servicos';
+import EditarCliente from '../pages/Editar/clientes';
 
 function AppRoutes() {
     return (
@@ -24,6 +28,12 @@ function AppRoutes() {
                 <Route path='/cadastrar_cliente' element={<CadastrarClientes/>}/>
                 <Route path='/cadastrar_produto' element={<CadastrarProdutos/>}/>
                 <Route path='/cadastrar_servico' element={<CadastrarServico/>}/>
+                <Route path='/clientes/1' element={<VisualizarCliente/>}/>
+                <Route path='/produtos/1' element={<VisualizarProduto/>}/>
+                <Route path='/servicos/1' element={<VisualizarServico/>}/>
+                <Route path='/editar_cliente/1' element={<EditarCliente/>}/>
+                <Route path='/editar_produto/1' element={<EditarCliente/>}/>
+                <Route path='/editar_servico/1' element={<EditarCliente/>}/>
             </Routes>
         </Router>
     );

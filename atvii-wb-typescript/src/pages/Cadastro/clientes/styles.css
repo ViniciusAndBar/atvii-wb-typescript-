@@ -11,7 +11,7 @@ form{
     flex-direction: column;
 }
 
-.field input{
+.field input, select{
     width: 300px;
     background-color: transparent;
     border: none;
@@ -19,7 +19,7 @@ form{
     outline: none;
 }
 
-.field input:focus{
+.field input:focus, select:focus{
     border-bottom: 1px solid white;
 }
 
